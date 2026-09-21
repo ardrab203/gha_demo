@@ -17,5 +17,8 @@ jobs:
           echo "Branch/ref:  $GITHUB_REF"
           echo "Commit SHA:  $GITHUB_SHA"
 
-      - name: List files (notice: empty!)
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: List files (now we have the code)
         run: ls -la
