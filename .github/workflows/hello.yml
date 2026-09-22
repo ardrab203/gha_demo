@@ -1,6 +1,10 @@
 name: Hello Actions
 
-on: push
+on:
+  push:
+    branches: [main]
+    paths:
+      - "app/**"
 
 jobs:
   greet:
