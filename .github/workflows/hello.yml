@@ -18,7 +18,7 @@ jobs:
           echo "Commit SHA:  $GITHUB_SHA"
 
       - name: Check out repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: List files (now we have the code)
         run: ls -la
